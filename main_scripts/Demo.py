@@ -1,6 +1,4 @@
 #Import necessary functions, set number of measurements to perform for mammalian cortical area development network
-#!pip install qiskit
-#!pip install qiskit-aer
 from functions import *
 GiacoPath = "./28nets_rules/Giacomantonio2010.txt"
 nrshots=10000
