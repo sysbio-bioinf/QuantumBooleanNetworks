@@ -29,13 +29,13 @@ Experiments on IBM QPUs using more than 5 qubits can only be performed by member
 
 In the following the run times for performing all analyses and generating the figures shown in the article are listed for a MacBook Pro with a 2.3GHz Quad-Core processor 16 GB of RAM.
 
-*Run times for analyses in the main manuscript:*
+<u>*Run times for analyses in the main manuscript:*</u>
 - plot_Fig2b.py: 2min 47sec
 - main_GroverAmplitudeAmplification.py: 2sec
 - plot_Fig3.py: 2min 31sec
 - plot_Fig4.py: This analysis depends on results from cloud-accessible quantum processing units. The time to obtain these results depends on the availability of the devices and their queue at the time of task submission. Once this data has been received, the script has a run time of 0.6sec.
 
-*Run times for analyses in the supplementary material:*
+<u>*Run times for analyses in the supplementary material:*</u>
 - scalefree_powerlaw_checking.R: 1.06min
 - plot_FigS1.py: 1.3sec
 - plot_FigS4_classical.R: 1.49h
@@ -46,8 +46,8 @@ In the following the run times for performing all analyses and generating the fi
 - plot_FigS7: 14.4min if transition tables from FigS7_generate_tt_csv.R are available.
 - plot_FigS8: This analysis depends on results from cloud-accessible quantum processing units. The time to obtain these results depends on the availability of the devices and their queue at the time of task submission. Once this data has been received, the script has a run time of 0.6sec.
 
-*Installation time*
-On the same MacBook Pro, the setup of a new virtual environment followed by the installation of the packages specified in the `requirements.txt` file required 38.5sec.
+<u>*Installation time:*</u>
+On the same MacBook Pro, the setup of a new virtual environment followed by the installation of the packages specified in the `requirements.txt` file required 38.5 sec.
 
-*Demo:*
-The main_scripts folder contains a demo script for performing dynamic analyses of a small QBN, such as state transitions, amplitude amplification and quantum counting.
+<u>*Demo:*</u>
+The main_scripts folder contains a demo script for performing dynamic analyses of a small QBN for the mammalian cortical area development network, such as state transitions, amplitude amplification and quantum counting.

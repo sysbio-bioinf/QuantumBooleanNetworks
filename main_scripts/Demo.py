@@ -5,6 +5,10 @@ from functions import *
 GiacoPath = "./28nets_rules/Giacomantonio2010.txt"
 nrshots=10000
 
+#Print a circuit for performing a synchronous state transition:
+syncTransitionCircuit = synthesizeFullNetworkUpdateCircuit(GiacoPath)
+print(syncTransitionCircuit)
+
 #Perform T=4 forward state transitions in the network.
 #Perform shotnr repeated measurements to obtain the attractor distribution.
 GiacoExactTransition4 = allparam_exact_multiTransition_synchronous(rulestxt=GiacoPath, Tmax=4, nrshots=nrshots, normalizeOutput=True, seed_transpiler=123, seed_simulator=123)

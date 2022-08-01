@@ -60,6 +60,12 @@ def probdict2list(dict):
         problist[keyint] = dict[key]
     return problist
 
+"Get average of a distribution:"
+def avgOfDistr(distr):
+    #State is already normalised, need to sum up all key*val, key is nrResults of counting, val is prob.weight
+    avg = sum(starmap(mul, distr.items())) / sum(distr.values())
+    return(avg)
+
 """
 Classical fidelity to compare two probability distributions over the same index set, given as F_s by Lubinski et al.
 """
